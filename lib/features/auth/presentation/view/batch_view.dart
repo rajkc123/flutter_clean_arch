@@ -1,10 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:student_management_starter/features/batch/presentation/viewmodel/batch_view_model.dart';
 
-class BatchView extends StatelessWidget {
+class BatchView extends StatefulWidget {
   const BatchView({super.key});
 
   @override
+  State<BatchView> createState() => _BatchViewState();
+}
+
+class _BatchViewState extends State<BatchView> {
+  get ref => null;
+
+  @override
   Widget build(BuildContext context) {
+    var batchState = ref.watch(batchViewmodelProvider);
     return SizedBox.expand(
       child: Padding(
         padding: const EdgeInsets.all(10),

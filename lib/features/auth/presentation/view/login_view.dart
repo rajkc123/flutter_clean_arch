@@ -2,8 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:student_management_starter/features/auth/presentation/navigator/dashboard_navigator.dart';
-import 'package:student_management_starter/features/auth/presentation/viewmodel/dashboard_view_model.dart';
 import 'package:student_management_starter/features/auth/presentation/viewmodel/login_view_model.dart';
 
 class LoginView extends ConsumerStatefulWidget {
@@ -15,8 +13,8 @@ class LoginView extends ConsumerStatefulWidget {
 
 class _LoginViewState extends ConsumerState<LoginView> {
   final _formKey = GlobalKey<FormState>();
-  final _usernameController = TextEditingController(text: 'Risesh');
-  final _passwordController = TextEditingController(text: 'risesh123');
+  final _usernameController = TextEditingController(text: 'rajkc');
+  final _passwordController = TextEditingController(text: 'rajkc123');
 
   // final _usernameController = TextEditingController();
   // final _passwordController = TextEditingController();

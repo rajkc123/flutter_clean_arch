@@ -9,7 +9,7 @@ part 'batch_hive_model.g.dart';
 //// COMMAND LINE FOR THIS FILE :  dart run build_runner build -d
 
 
-final BatchHiveModelProvider = Provider(
+final batchHiveModelProvider = Provider(
   (ref) => BatchHiveModel.empty(),
 );
 

@@ -9,7 +9,7 @@ import 'package:student_management_starter/features/batch/domain/entity/batch_en
 final batchLocalDataSourceProvider = Provider(
   (ref) => BatchLocalDataSource(
     hiveService: ref.read(hiveServiceProvider),
-    batchHiveModel: ref.read(BatchHiveModelProvider),
+    batchHiveModel: ref.read(batchHiveModelProvider),
   ),
 );
 
@@ -52,6 +52,8 @@ Future<Either<Failure, List<BatchEntity>>> getAllBatches() async {
     return Left(Failure(error: e.toString()));
   }
 }
+
+
 
 }
 
